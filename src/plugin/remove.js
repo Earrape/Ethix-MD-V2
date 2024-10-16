@@ -17,8 +17,8 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     const botAdmin = participants.find(p => p.id === botNumber)?.admin;
     const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!botAdmin) return m.reply("කට්ටියව අයින් කරන්න මට ඇඩ්මින් දීපල්ලා . මේක හරි වැඩක් උනානේ");
+    if (!senderAdmin) return m.reply("අනේ ඔයා ඇඩ්මින් නෙමේ සුදූ. ඔයාට බෑ  කාවවත් අයින් කරන්න 😁😘");
 
     if (!m.mentionedJid) m.mentionedJid = [];
 
@@ -31,7 +31,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
       : [];
 
     if (users.length === 0) {
-      return m.reply("*📛 PLEASE MENTION OR QUOTE A USER TO KICK*");
+      return m.reply("කාවද අයින් කරන්න ඕනි? .kick එක්ක මෙන්ෂන් කරන්න අපහු .මන් අයින් කරන්නම්👀");
     }
 
     const validUsers = users.filter(Boolean);
